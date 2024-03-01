@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LIST APP</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" >
+  </head>
+  <body>
+    <div class="container-add">
+      <div class="add-head">
+          <div class="add-title"><h1>add todo</h1></div>
+          <div class="add-close"><span class="close-btn">✖</span></div>
+      </div>
+      <div class="add-body">
+          <form action="/create" method="post">
+              <div class="add-text">
+                  <input type="text" placeholder="ex.トレーニング" name="itemName">
+               </div>
+               <div class="add-btn">
+                  <input type="submit" value="todo!">
+              </div>
+          </form>
+      </div>
+  </div>
+    <header>
+      <div class="header-logo">LIST APP</div>
+    </header>
+    <div class="todotable">
+    <div class="add-table"><span>add todo</span></div>
+    <div class="container">
+      <div class="container-table">
+        <div class="table-header">
+          <span id="table-list">To Do</span>
+        </div>
+        <div class="table-body">
+          <% items.forEach((item)=>{%>
+          <ul>
+            <li>
+              <div class="table-body-list"><%= item.name %></div>
+            </li>
+            <form action="/delete/<%= item.id %>" method="post" class="table-body-del"><input type="submit" value="✖"></form>
+            <form action="/edit/<%= item.id %>" method="post" class="table-body-edit"><input type="submit" value="edit"></form>
+          </ul>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="jQuery/script.js"></script>
+  </body>
+</html>

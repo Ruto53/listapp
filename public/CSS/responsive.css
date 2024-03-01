@@ -1,0 +1,162 @@
+/*スマホ表示*/
+@media screen and (max-width:480px) {
+    .add-table{
+      width: 160px;
+      background-color: rgba(107, 167, 132, 0.3);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .add-table span{
+      color: white;
+      text-decoration: none;
+      line-height: 55px;
+      font-size: 15px;
+    }
+    
+    header{
+      line-height: 55px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .header-logo{
+      margin-left: 20px;
+      font-family: 'Noto Sans JP', sans-serif;
+      letter-spacing: 2px;
+    }
+    .todotable{
+      height: auto;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px;
+    }
+    .container{
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .table-header{
+      background-color: rgba(255, 255 ,255 ,0.3);
+      border-bottom: 8px solid black;
+    }
+    
+    #table-list{
+      width: auto;
+      padding-left: 0px;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+      font-size: 20px;
+    }
+    .table-body-list{
+      width: 290px;
+      padding-left: 0px;
+      line-height: 60px;
+      color: white;
+      font-size: 18px;
+    }
+    
+    .table-body-del{
+      margin-left: 0px;
+      padding-left: 0px;
+      line-height: 60px;
+      font-size: 20px;
+    }
+    
+    .table-body-del input{
+      background-color: rgba(255, 255 ,255 ,0);
+      color: white
+    }
+    .table-body-edit{
+      margin-left: 20px;
+      padding-left: 0px;
+      line-height: 60px;
+      font-size: 20px;
+    }
+    .table-body-edit input{
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+    }
+    
+    /*add btn*/
+    .container-add{
+      display: none;
+    }
+    .container-add{
+      position: absolute;
+      height: 400px;
+      width: 90%;
+      top: 100px;
+      left: 20px;
+      background-color: rgb(21, 21, 21);
+    }
+    .add-head{
+      margin: 0;
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    .add-title{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .add-title h1{
+      font-weight: 400;
+    }
+    .add-close{
+      line-height: 40px;
+      width: 40px;
+      margin-left: 280px;
+    }
+    
+    input {
+      height: 40px;
+    }
+    .add-body{
+        margin-top: 100px;
+      }
+    .add-text input{
+      width: 80%;
+      height: 50px;
+      font-size: 20px;
+    }
+    .add-btn input{
+      height: 50px;
+      background-color: rgba(107, 167, 132, 0.5);
+      color: white;
+      font-size: 20px;
+    }
+    /*edit btn*/
+    .container-edit{
+        height: auto;
+        width: 480px;
+        left: 0;
+      }
+      .edit-head{
+        margin: 0;
+        padding-top: 0;
+        padding-left: 0;
+      }
+      .edit-title{
+        font-size: 30px;
+        margin-left: 35px;
+      }
+      .edit-title h1{
+        font-weight: 300;
+      }
+      .edit-body{
+          margin-top: 100px;
+        }
+      .edit-text input{
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+      }
+      .edit-btn input{
+        height: 50px;
+        background-color: rgba(107, 167, 132, 0.5);
+        color: white;
+        font-size: 20px;
+      }
+}

@@ -1,0 +1,65 @@
+.container-add{
+    height: 700px;
+    width: 1160px;
+    background-color: black;
+    margin-top: 100px;
+    margin-left: 280px;
+}
+.add-head{
+    height: auto;
+    width: 100%;
+    margin: 0 50px 50px 160px;
+    padding-top: 40px;
+}
+.add-title{
+    color: white;
+    float: left;
+    font-size: 30px;
+    margin-top: 25px;
+}
+.add-title h1{
+    font-weight: 600;
+}
+.add-close{
+    line-height: 80px;
+    width: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 880px;
+    text-align: center;
+    cursor: pointer;
+}
+.add-body{
+    height: auto;
+    width: auto;
+    margin-top: 164px;
+}
+input {
+    border: 1px solid transparent;
+    transition: border 0.2s ease-out;
+    height: 46px;
+    outline: 0;
+  }
+  .add-text{
+    text-align: center;
+  }
+  .add-text input{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 800px;
+    height: 74px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 30px;
+    font-size: 30px;
+  }
+  .add-btn{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .add-btn input{
+    height: 74px;
+    background-color: rgba(107, 167, 132, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    width: 180px;
+    cursor: pointer;
+  }
+  

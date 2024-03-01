@@ -1,0 +1,272 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+body{
+  /*background-image: url(/image/listapp.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.1);
+  background-blend-mode: darken;*/
+  background-color: black;
+  position: relative;
+}
+.add-table{
+  width: 160px;
+  background-color: rgba(107, 167, 132, 0.3);
+  margin: 0 0 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.add-table:hover{
+  background-color: rgba(107, 167, 132, 0.5);
+}
+
+.add-table span{
+  color: white;
+  text-decoration: none;
+  line-height: 55px;
+  font-size: 20px;
+}
+
+header{
+  line-height: 55px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.header-logo{
+  margin-left: 73px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 2px;
+}
+.todotable{
+  height: auto;
+  width: 950px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 78px;
+}
+.container{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.table-header{
+  background-color: rgba(255, 255 ,255 ,0.3);
+  border-bottom: 8px solid black;
+}
+
+.table-header{
+  display: flex;
+}
+
+.table-body ul{
+  border-bottom: 8px solid black;
+  display: flex;
+}
+
+#table-list{
+  width: auto;
+  margin-left: 24px;
+  padding-left: 25px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 25px;
+}
+.table-body-list{
+  width: 700px;
+  margin-left: 24px;
+  padding-left: 25px;
+  line-height: 85px;
+  color: white;
+  font-size: 22px;
+}
+
+.table-body-del{
+  width: auto;
+  margin-left: 24px;
+  padding-left: 25px;
+  text-align: center;
+  line-height: 85px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.table-body-del input{
+  background-color: rgba(255, 255 ,255 ,0);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.table-body-del input:hover{
+  color: rgba(255, 255, 255, 1.0);
+}
+.table-body-edit{
+  width: auto;
+  margin-left: 24px;
+  padding-left: 25px;
+  text-align: center;
+  line-height: 85px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.table-body-edit input{
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.3);
+}
+.table-body-edit input:hover{
+  color: rgba(255, 255, 255, 1.0);
+}
+
+/*add btn*/
+.container-add{
+  display: none;
+}
+.container-add,.container-edit{
+  position: absolute;
+  height: 700px;
+  width: 1160px;
+  background-color: black;
+  top: 100px;
+  left: 280px;
+}
+.add-head{
+  height: auto;
+  width: 100%;
+  margin: 0 50px 50px 160px;
+  padding-top: 40px;
+}
+.add-title{
+  color: white;
+  float: left;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.add-title h1{
+  font-weight: 600;
+}
+.add-close{
+  line-height: 80px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 880px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.add-close:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.add-body{
+  height: auto;
+  width: auto;
+  margin-top: 164px;
+}
+input {
+  border: 1px solid transparent;
+  transition: border 0.2s ease-out;
+  height: 46px;
+  outline: 0;
+}
+.add-text{
+  text-align: center;
+}
+.add-text input{
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 800px;
+  height: 74px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 30px;
+  font-size: 30px;
+}
+.add-btn{
+  text-align: center;
+  margin-top: 40px;
+}
+.add-btn input{
+  height: 74px;
+  background-color: rgba(107, 167, 132, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  width: 180px;
+  cursor: pointer;
+}
+.add-btn input:hover{
+  background-color: rgba(107, 167, 132, 0.5);
+  color: white;
+}
+
+/*edit btn*/
+.container-edit{
+  position: absolute;
+  height: 700px;
+  width: 1160px;
+  background-color: black;
+  top: 100px;
+  left: 280px;
+}
+.edit-head{
+  height: auto;
+  width: 100%;
+  margin: 0 50px 50px 160px;
+  padding-top: 40px;
+}
+.edit-title{
+  color: white;
+  float: left;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.edit-title h1{
+  font-weight: 600;
+}
+.edit-close{
+  line-height: 80px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 880px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.edit-close:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.edit-body{
+  height: auto;
+  width: auto;
+  margin-top: 164px;
+}
+.edit-text{
+  text-align: center;
+}
+.edit-text input{
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 800px;
+  height: 74px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 30px;
+  font-size: 30px;
+}
+.edit-btn{
+  text-align: center;
+  margin-top: 40px;
+}
+.edit-btn input{
+  height: 74px;
+  background-color: rgba(107, 167, 132, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  width: 180px;
+  cursor: pointer;
+}
+.edit-btn input:hover{
+  background-color: rgba(107, 167, 132, 0.5);
+  color: white;
+}

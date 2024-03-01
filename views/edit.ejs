@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LIST APP</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" >
+  </head>
+  <body>
+  <div class="container-edit">
+    <div class="edit-head">
+        <div class="edit-title"><h1>edit list</h1></div>
+    </div>
+    <div class="edit-body">
+        <form action="/edititem/<%= getedit.id %>" method="post">
+            <div class="edit-text">
+                <input type="text" value="<%= getedit.name %>" name="itemName">
+             </div>
+             <div class="edit-btn">
+                <input type="submit" value="edit!">
+            </div>
+        </form>
+    </div>
+</div>
+  <script src="jQuery/script.js"></script>
+  </body>
+</html>
